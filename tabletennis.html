@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Tennis</title>
+    <style>
+        .container{ 
+            padding: 5px 20px 15px 20px !important;
+            border: 1px solid lightgray !important;
+            border-radius: 4px !important;
+            background-color: #98DDDE;
+        }
+        .head{
+            text-align: center;
+            padding: 53px;
+            text-shadow: 2px 2px 3px black;
+        }
+        .back{
+            background-color: rgb(56, 138, 170);
+        }
+        nav{
+            background-color:  rgb(241, 185, 255);
+            padding: 20px;
+        }
+        nav a{
+            padding: 20px;
+            text-decoration: none;
+            color: black;
+        }
+        nav a:hover{
+            padding: 20px;
+            background-color: rgb(0, 68, 255);
+            font-weight: 900;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-shadow: black;
+        }
+        .dropdown {
+            float: left;
+        }
+        .dropdown .dropbtn {
+            font-size: 16px; 
+            border: none;
+            outline: none;
+            color: black;
+            background-color: inherit;
+            font-family: inherit; 
+        }        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgb(0, 247, 255);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: rgb(0, 68, 255);
+        }
+        .dropdown:hover{
+            background-color: rgb(0, 68, 255);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-shadow: black;
+        }
+        .dropdown:hover .dropbtn{
+            font-weight: 900;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .heading {
+            text-align: center;
+        }
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea{
+            width: 40%;
+            padding: 12px;
+            border: 1px solid rgb(3, 2, 39);
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .cric_image{
+            float: right;
+            width: 35%;
+        }
+        .cric_text{
+            line-height: 2em;
+            font-size: 20px;
+        }
+        input[type="submit"]{
+            background-color: #db17aa;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius:4px;
+            cursor: pointer;
+            width: 50%;
+        }
+        input[type="submit"]:hover{
+            background-color: tomato;
+        }
+        .star,.note{
+            color: red;
+        }
+        .mid_head{
+            text-align: center;
+        }
+        .rent{
+            font-size: 1.5em;
+        }
+        .rent{
+            color: tomato;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+            <header>
+                <div class="back">  
+                    <h1 class="head">Table Tennis</h1>
+                </div>
+                <nav>
+                        <div class="dropdown">
+                            <button class="dropbtn">Sports 
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="cricket.html">Cricket</a>
+                                <a href="football.html">Football</a>
+                                <a href="badminton.html">Badminton</a>
+                                <a href="swimmingpool.html">Swimming Pool</a>
+                            </div>
+                        </div> 
+                    <a href="rules&rugularions.html">Rules and Regulation</a>
+                    <a href="membership.html">New Membership</a>
+                    <a href="contactUs.html">Contact Us</a>
+                    <a href="home.html">Home</a>
+                </nav>
+            </header> 
+            <main>
+                <form action="">
+                <div class="boxdescp">
+                    <img class="cric_image" src="tabletennis.jpg" />
+                    <p class="cric_text">We have one of the best Courts available around. We have proper dimensional court along with the exact markings as of in the International matches so you can adapt to the situations. The matt finish is almost perfect and the maintainance of the court is very good as per the feedback received by our customers. You can rent products available at the club on spot as per the cost. <br><span class="rent">Rentable products</span> <br> 2 Pair of Rackets and 3 Shuttlecocks at a time, etc. <br> <span class="note">NOTE</span> : Rentable products can't be booked Online.</p>
+                </div>
+                <br>
+                <h2 class="mid_head">BOOK HERE</h2>
+                <table class="table">
+                    <tr>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                        <th>Sunday</th>
+                    </tr>
+                </table>
+                <p>Name : <span class="star">*</span><input type="text" name="name" required placeholder="Enter your Name"></p>
+                <p>Email id: <span class="star">*</span> <input type="email" name="email" id="email" required placeholder="xyz123@gmail.com"></p> 
+                <p>Contact : <span class="star">*</span> <input type="text" name="Contact" required placeholder="9167067706"></p>
+                <input type="submit"value="Payment">                                                                                                  
+        </form>
+        </main>
+        </div>
+    </div>
+</body>
+</html>

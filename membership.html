@@ -1,0 +1,270 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Form</title>
+    <style>
+        .container{ 
+            padding: 5px 20px 15px 20px !important;
+            border: 1px solid lightgray !important;
+            border-radius: 4px !important;
+            background-color: white;
+        }
+        .head{
+            text-align: center;
+            padding: 30px;
+            border: 1px solid lightgray;
+            border-radius: 3px;
+            background-color: burlywood;
+            text-shadow: 1px 1px 2px black;
+        }
+        nav{
+            background-color:  rgb(241, 185, 255);
+            padding: 20px;
+        }
+        nav a{
+            padding: 20px;
+            text-decoration: none;
+            color: black;
+        }
+        nav a:hover{
+            padding: 20px;
+            background-color: rgb(0, 68, 255);
+            font-weight: 900;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-shadow: black;
+        }
+        .dropdown {
+            float: left;
+        }
+        .dropdown .dropbtn {
+            font-size: 16px; 
+            border: none;
+            outline: none;
+            color: black;
+            background-color: inherit;
+            font-family: inherit; 
+        }        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgb(241, 185, 255);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: rgb(0, 68, 255);
+        }
+        .dropdown:hover{
+            background-color: rgb(0, 68, 255);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-shadow: black;
+        }
+        .dropdown:hover .dropbtn{
+            font-weight: 900;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        section:nth-child(even) {
+            background-color: rgb(241, 241, 241);
+        }
+        section{
+            padding: 10px;
+        }
+        .img{
+            width: 350px;
+            float: right;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+        th, td {
+            border-bottom: 1px solid #ddd;
+        }
+        tr:nth-child(even) {background-color: #f2f2f2;}
+        input[type="text"],
+        input[type="email"],
+        select, 
+        textarea{
+            width: 40%;
+            padding: 12px;
+            border: 1px solid rgb(3, 2, 39);
+            border-radius: 5px;
+            margin: 10px;
+        }
+        input[type="submit"]{
+        background-color: #db17aa;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius:4px;
+        cursor: pointer;
+        width: 50%;
+    }
+    input[type="submit"]:hover{
+        background-color: tomato;
+
+    }
+    .table{
+        width:100%;
+    }
+    table th,table td{
+        text-align: center;
+    }
+    .sub_head{
+        text-align: center;
+    }
+    .sub{
+        font-weight: 600;
+    }
+    img{
+        float: right;
+        width: 40%;
+    }
+    .fieldset{
+        width: 45%;
+    }
+    input[type="radio"] {  
+        margin-right: 20px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="head">Membership</h1>
+            <nav>
+                <div class="dropdown">
+                    <button class="dropbtn">Sports 
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="cricket.html">Cricket</a>
+                        <a href="#">Football</a>
+                        <a href="#">Table Tennis</a>
+                        <a href="#">Badminton</a>
+                        <a href="#">Swimming Pool</a>
+                    </div>
+                </div> 
+            <a href="rules&rugularions.html">Rules and Regulation</a>
+            <a href="contactUs.html">Contact Us</a>
+            <a href="home.html">Home</a>
+        </nav>
+        </header>
+        <main>
+            <section>
+                <h2>Membership Perks</h2>
+                <ol>
+                    <li>We have three memberships available.</li>
+                    <ul>
+                        <li>1 month membership</li>
+                        <li>6 Month membership</li>
+                        <li>12 Month membership</li>
+                    </ul>
+                    <li>Members will be getting a welcome kit from our club on their first membership.</li>
+
+                    <li>Members can access various sports (indoor as well as outdoor) free for once.</li>
+                    <li>After accesing sports free for once , to access them again they will have to pay a discounted price of the normal charges.(Not applicable for 1 month membership.) </li>
+                    
+                </ol>
+                <img class="img" src="Citysportsclub.jpg" alt="">
+            </section>
+            <form name="membership_type" method="post" action="">
+            <section>
+                <h2>1 Month membership</h2>
+                <ul>
+                    <li>Monthly membership will costs Rs 999.</li>
+                    <li>Members will get 30% off on every sports</li>
+                    <li>Members can access gym for 50% off.</li>
+                    <li>Members will get 20% off on every rentable products.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>6 Months membership</h2>
+                <ul>
+                    <li>This membership will costs Rs 4,999.</li>
+                      <li>Members will get 50% off on every sports.</li>
+                      <li>Members can access gym for free.</li>
+                      <li>Members will get 40% off on every rentable products. </li>
+                </ul>
+                
+            </section>
+            <section>
+                <h2>12 Months membership</h2>
+                <ul>
+                    <li>Yearly membership will costs Rs 7,999.</li>
+                      <li>Members will get 60% off on every sports.</li>
+                      <li>Members can access gym for free.</li>
+                      <li>Members will get 60% off on every rentable products. </li>
+                </ul>
+                
+            </section>
+           <br><br>
+           <h2 class="sub_head">For Simplified Comparison use the Table Below.</h2> 
+            <table class="table">
+                <tr>
+                  <th>Facilities</th>
+                  <th>1 month membership</th>
+                  <th>6 month membership</th>
+                  <th>12 month membership</th>
+                </tr>
+                <tr>
+                  <td class="sub">Gym</td>
+                  <td>50% off</td>
+                  <td>free</td>
+                  <td>free</td>
+                </tr>
+                <tr>
+                  <td class="sub">Sports</td>
+                  <td>40% off</td>
+                  <td>50% off</td>
+                  <td>60% off</td>
+                </tr>
+                <tr>
+                    <td class="sub">Rentable products</td>
+                    <td>40% off</td>
+                    <td>50% off</td>
+                    <td>60% off</td>
+                  </tr>
+              </table>
+              <br><br>
+            <h2 class="sub_head">Get your New Membership here</h2>
+            <img src="book-en.gif" alt="Book_here">
+            <p>Name : * 
+                <input type="text" name="name" id="name" required placeholder="Enter your Name"></p>
+            <p>Email id : * <input type="email" name="email" id="email" required placeholder="xyz123@gmail.com"></p> 
+            <p>Contact : *
+                <input type="text" name="contact" id="contact" required placeholder="9167067706"></p>
+            <p>Address : * <input type="text" name="address" id="address" required placeholder="K6/603, Gokul Nagari, Khapadpada, Kalyan(W)"></p>  
+            <fieldset class="fieldset">
+                <legend>Select Membership *</legend>
+                <p>
+                    <input type="radio" name="membership" id="1_month" required>Monthly (Rs. 999)</input>
+                    <input type="radio" name="membership" id="6_months" required>6 Months (Rs. 4,999)</input>
+                    <input type="radio" name="membership" id="12_months" required>Yearly (Rs. 7,999)</input>
+                </p>
+            </fieldset>    
+            <br>
+            <a href="payment.html"><input type="submit" value="Proceed to payment"></a>
+            
+        </form>
+        </main>
+    </div>
+</body>
+</html>
+
+
+
+
